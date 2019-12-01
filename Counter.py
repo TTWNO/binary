@@ -1,4 +1,5 @@
 #Counter.py
+# this is a change in this file
 import RPi.GPIO as GPIO
 import time
 
@@ -68,9 +69,13 @@ def ledOff(pin):
 		GPIO.output(21,GPIO.LOW)
 
 
+
 x = 0
 while( x < 9):
 	ledOn(x)
-	time.sleep(2)
+	time.sleep(0.1)
 	ledOff(x)
 	x = x + 1
+
+
+
